@@ -75,7 +75,8 @@ boton:active
         text-align:right;
         width: 25px;
         height: 25px;      
-    }    
+    } 
+
 /* PIE DE PAGINA*/
 /*BOX Modeling para el pie de pagina*/
 .box-mapa
@@ -232,9 +233,19 @@ boton:active
     {
         text-align: right;
     }
-.producto
+.camarabullet
     {
         width: 200px;
+        height: 100px;
+    }
+.camaradomo
+    {
+        width: 100px;
+        height: 100px;
+    }
+.dvr
+    {
+        width: 250px;
         height: 100px;
     }
 .border
@@ -247,7 +258,7 @@ boton:active
     }
 .precio
     {
-        font-size: 50px;
+        font-size: 30px;
         text-align: center;
         margin: 0px;
     }
@@ -272,10 +283,11 @@ boton:active
             "producto   producto    producto    producto"
             "producto   producto    producto    producto"
             "producto   producto    producto    producto"
+            "producto   producto    producto    producto"
             "producto   producto    producto    producto";
             
-        grid-template-columns:25% 25% 25% 25%;
-        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns:auto;
+        grid-template-rows: 300px 300px 300px 300px 300px;
     }
 
 /*PAGINA CONTACTO*/
