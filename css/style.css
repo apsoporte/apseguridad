@@ -1,0 +1,346 @@
+/*FUENTE PARA MI DISEÑO*/
+@font-face 
+    {
+        font-family: "font-poppins" sans-serif;
+        src: url("../font/Poppins-Italic.ttf");
+    }
+/*ALTA EN GRAL*/
+body
+    {
+        background-color:beige;
+        font-size: 15px;
+        /*font-family: "font-poppins" sans-serif;*/
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+p    
+    {   
+        text-align: right; 
+    }
+h1
+    {
+        font-family: cursive;        
+    }
+
+/*CREACION DE BOTONES*/
+boton 
+    {
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: 0;        
+        background-color:darkolivegreen;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-size: 15px;
+        transition: all .5s ease;
+    }   
+boton:hover 
+    {
+        letter-spacing: 3px;        
+        background-color:#022E47;
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+    }   
+boton:active 
+    {
+        letter-spacing: 3px;        
+        background-color:#022E47;
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+        transform: translateY(10px);
+        transition: 100ms;
+    }
+/*CLASES PARA MENU Y LOGO PAGINAS DISEÑO*/
+.nav-logo
+    {
+        background-color:#022E47;
+        background-image: none;        
+    }
+.menu-derecha 
+    {
+        color:#022E47;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 10px;
+        font-style: italic;                  
+        width: 20px;
+        height: 20px;               
+    }
+.logo-cctv
+    {        
+        height: 70px;     
+    }
+.logo-link
+    {
+        text-align:right;
+        width: 25px;
+        height: 25px;      
+    }    
+/* PIE DE PAGINA*/
+/*BOX Modeling para el pie de pagina*/
+.box-mapa
+    {        
+        width: 150px;
+        height: 100px;       
+        margin: 5px;
+        padding: 5px 15px 5px 0px;
+    }
+.box-datos
+    {
+        width: 250px;
+        height: 120px;     
+        padding: 5px 10px 5px 15px;
+        font-size: 10px;
+    }
+.box-texto
+    {
+        width: 680px;
+        height: 120px;                      
+        padding: 5px 5px 5px 15px;
+        font-size: 10px;
+    }
+.box-icono
+    {        
+        width: 50px;
+        height: 100px;     
+        margin: 10px; 
+        display: flex;        
+        flex-direction: column; 
+        flex-wrap: wrap;
+        justify-content:space-evenly; 
+    }
+.box-ws
+    {        
+        width: 50px;
+        height: 100px;     
+        margin: 0px; 
+
+        display: flex;        
+        flex-direction: column; 
+        flex-wrap: wrap;
+        justify-content: center;                   
+    }
+
+/*PAGINA INDEX*/
+/*boton buscar*/
+.search 
+    {
+        width: 100%;
+        position: relative;
+        display: flex;
+    }  
+.searchTerm
+    {
+        width: 100%;
+        border: 2px solid black;
+        border-right: none;
+        padding: 5px;
+        height: 20px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color:black;
+    }
+.searchButton 
+    {
+        width: 40px;        
+        border: 1px solid black;
+        background: black;
+        text-align: center;
+        color: purple;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+.wrap
+    {
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+.icono-index
+    {
+        padding: 0px;
+        margin: 0px;
+        height: 60px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+.class-nav
+    {        
+        width: 350px;                 
+    }
+.posicion
+    {
+        vertical-align: middle;
+    }
+.picture-index
+    {
+        padding: 0px;
+        margin: 0px;
+        height: 60px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+    }
+.nav-picture
+    {
+        width: 200px;
+        height: 200px;
+    }
+.imagen-banner
+    {      
+        background-position: 0px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: stretch;
+    }
+/*Flex*/
+.flex-container 
+    {        
+        padding: 0px;
+        margin: 0px;
+        height: 120px;
+        
+        /*Activo Flexbox*/
+        display: flex;
+
+        /*Defino cual es mi eje principal si la fila(row) o es la columna (column)*/
+        flex-direction: row; 
+
+        /*Defino el desborde o salto de línea*/
+        flex-wrap: wrap;
+
+        /*Alineamos los elementos en el eje principal*/
+        justify-content: flex-start;      
+    }
+
+/*PAGINA PRODUCTOS Y ACCESORIOS*/
+.option
+    {
+        color: gray;
+    }
+.select
+    {
+        text-align: right;
+    }
+.producto
+    {
+        width: 200px;
+        height: 100px;
+    }
+.border
+    {
+        border: 2px solid black;
+        border-radius: 30px;
+        background: white;
+        font-size: 15px;
+        margin: 10px;
+    }
+.precio
+    {
+        font-size: 50px;
+        text-align: center;
+        margin: 0px;
+    }
+/*GRIDS*/
+#grid-container 
+    {
+        /*Box-modeling*/    
+        margin: 20px auto;
+
+        display: grid;    
+        column-gap: 30px;
+        row-gap: 20px;
+
+        text-align: center;
+        height: 600px;
+    }
+/*Grid areas*/
+#grilla 
+    {
+        display: grid;
+        grid-template-areas: 
+            "producto   producto    producto    producto"
+            "producto   producto    producto    producto"
+            "producto   producto    producto    producto"
+            "producto   producto    producto    producto";
+            
+        grid-template-columns:25% 25% 25% 25%;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+
+/*PAGINA CONTACTO*/
+/*BOX Modeling para la pagina Contacto*/
+.box-label
+    {
+        width: 400px;
+        height: 100px;       
+        margin: 0px;
+        padding: 5px 15px 5px 0px;                 
+    }
+.box-contacto
+    {
+        width: 350px;
+        height: 350px;     
+        margin: 0px; 
+
+        display: flex;        
+        flex-direction: column; 
+        flex-wrap: wrap;
+        justify-content: center;                   
+    }
+
+/*PAGINA LOGIN*/
+/*BOX Modeling para la pagina Login*/
+.box-label-login
+    {        
+        font-size: 30px;
+
+        display: flex;        
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;;           
+    }
+.box-text-login
+    {
+        width: 400px;
+        height: 250px;     
+        margin: 0px;
+        padding: 0px 100px 0px 50px; 
+
+        display: flex;        
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: start;           
+    }
+.box-text-registro
+    {
+        width: 700px;
+        height: 150px;     
+        margin: 0px; 
+
+        display: flex;        
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: start;           
+    }
+
+/*BOX Modeling para la pagina Contrasena*/
+.box-correo
+    {        
+        font-size: 30px;
+
+        display: flex;        
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;;           
+    }
