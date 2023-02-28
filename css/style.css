@@ -14,7 +14,8 @@ body
     }
 p    
     {   
-        text-align: right; 
+        text-align: right;        
+        margin: 5px 15px 0px 0px;
     }
 h1
     {
@@ -248,6 +249,12 @@ boton:active
         width: 250px;
         height: 100px;
     }
+.accesorio
+    {
+        width: 200px;
+        height: 100px;
+    }
+
 .border
     {
         border: 2px solid black;
