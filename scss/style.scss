@@ -146,6 +146,10 @@ boton:active
         flex-wrap: wrap;
         justify-content: center;                   
     }
+.altofooter
+    {
+      margin-top: 0px;
+    }
 /*Diseño Responsive*/
 @media screen and (max-width: 480px) 
     {
@@ -187,6 +191,10 @@ boton:active
                 flex-direction: column;
                 flex-wrap: wrap;
                 justify-content: center;
+            }
+        .altofooter
+            {
+                margin-top: 450px;
             }
     }
 /*-----------------------------------------------------------------------------------------------------------*/
@@ -407,7 +415,7 @@ boton:active
         font-size: 10px;
       }
   }
-  
+
 /*---------------------------------------------------------------------------------------------------------*/
 /*PAGINA PRODUCTOS Y ACCESORIOS*/
 .option {

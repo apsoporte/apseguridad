@@ -140,6 +140,10 @@ boton:active {
   justify-content: center;
 }
 
+.altofooter {
+  margin-top: 0px;
+}
+
 /*Diseño Responsive*/
 @media screen and (max-width: 480px) {
   .box-mapa {
@@ -175,6 +179,9 @@ boton:active {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .altofooter {
+    margin-top: 450px;
   }
 }
 /*-----------------------------------------------------------------------------------------------------------*/
