@@ -47,7 +47,12 @@
     <br>
 
     <!--Imgenes banners-->
-    <div id="carouselExample" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="../apseguridad/Imagenes/picture/index1.png" class="d-block w-100" alt="...">
@@ -59,16 +64,17 @@
                 <img src="../apseguridad/Imagenes/picture/index3.png" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <br>   
+    <br>
+
     <!--Imagenes Logotipos-->
     <section  class="icono-index">
         <nav class="class-nav" >
@@ -86,24 +92,78 @@
     </section>
     <br>
 
-    <!--Productos destacados-->
-    <section  class="picture-index">
-        <nav class="nav-picture" >
-            <img src="./Imagenes/picture/camara-ciudad.jpg" alt="camara-ciudad" style="width: 200px; height:200px ;">
-        </nav>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <!--Productos destacados-->    
+    <section class=" bg-color"> 
+        <div id="grid-containerindex">
+            <div id="grilla-index" >
+                    
+                <nav class="border">
+                    <img class="camarabullet" src="./imagenes/picture/camaras/bullethdcvi1080p.png" alt="">                            <br>
+                    <br>Cámara Bullet HDCVI 1080p 30mt IR Lente varifocal 2.7-12mm</br>   
+                    <p class="precio">$29.426,94</p>            
+                    <br>             
+                    <boton>Comprar</boton>
+                </nav>
 
+                <nav class="border">
+                    <img class="camarabullet" src="./Imagenes/picture/accesorios/disco4tb.png" alt="">  
+                    <br>              
+                    <br>Cámara HD-tvi ext.-bullet- 720p-2,8 a 12mm-ir 40 mts</br>                
+                    <p class="precio">$18.568,01</p>
+                    <br>                            
+                    <boton>Comprar</boton>
+                </nav>
+
+                <nav class="border">
+                    <img class="accesorio" src="./Imagenes/picture/accesorios/fuente12a.png" alt="">  
+                    <br>              
+                    <br>Fuente de alimentación 6-12-24VDC 5A c/ cargador de bateria</br>                
+                    <p class="precio">$9.779,23</p>
+                    <br>                
+                    <boton>Comprar</boton>
+                </nav>
+
+                <nav class="border">
+                    <img class="dvr" src="./Imagenes/picture/dvr/dvr16chturbo.png" alt="">
+                    <br>
+                    <br>Grabadora 16 ch turbo hd/ahd/hdcvi/cbvs + 2 ip 1hdd - HDD 6TB</br>                   
+                    <p class="precio">$85.917,24</p>                
+                    <br>
+                    <boton>Comprar</boton>
+                </nav>
+            </div>
+        </div>
+    </section>    
+    <br>
+    <br>
+    <br>
+    <!--Imagenes Marcas-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../apseguridad/imagenes/picture/marca1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../apseguridad/imagenes/picture/marca2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../apseguridad/imagenes/picture/marca3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>       
+    <br>
+    <br>    
+    <br>
+    <br>
+    <br>
     <footer class="piepagina">
         <hr/>
         <section class="flex-container" >

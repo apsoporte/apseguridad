@@ -4,6 +4,7 @@
   font-family: "font-poppins" sans-serif;
   src: url("../font/Poppins-Italic.ttf");
 }
+/*-------------------------------------------------------------------------------------------------------------*/
 /*ALTA EN GRAL*/
 body {
   background-color: beige;
@@ -22,6 +23,7 @@ h1 {
   margin-left: 10px;
 }
 
+/*-----------------------------------------------------------------*/
 /*CREACION DE BOTONES*/
 boton {
   padding: 10px 20px;
@@ -51,6 +53,7 @@ boton:active {
   transition: 100ms;
 }
 
+/*--------------------------------------------------------------------------------*/
 /*CLASES PARA MENU Y LOGO PAGINAS DISEÑO*/
 .nav-logo {
   background-color: #022E47;
@@ -93,6 +96,7 @@ boton:active {
     font-style: italic;
   }
 }
+/*----------------------------------------------------------------------*/
 /* PIE DE PAGINA*/
 /*BOX Modeling para el pie de pagina*/
 .box-mapa {
@@ -173,6 +177,7 @@ boton:active {
     justify-content: center;
   }
 }
+/*-----------------------------------------------------------------------------------------------------------*/
 /*PAGINA INDEX*/
 /*boton buscar*/
 .search {
@@ -212,26 +217,6 @@ boton:active {
   transform: translate(-50%, -50%);
 }
 
-/*.btn-search 
-    {
-        background: green;
-        border-radius: 0;
-        color:white;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #1c1c1c;
-        border-radius: 20px;
-    }
-.btn-search:link, .btn-search:visited 
-    {
-        color: #fff;
-    }
-.btn-search:active, .btn-search:hover 
-    {
-        background: #1c1c1c;
-        color: #fff;
-    }
-*/
 .center {
   display: flex;
   flex-direction: row;
@@ -256,6 +241,7 @@ boton:active {
 
 .posicion {
   vertical-align: middle;
+  height: 50px;
 }
 
 .picture-index {
@@ -282,21 +268,127 @@ boton:active {
   justify-content: stretch;
 }
 
+.camarabulletindex {
+  width: 200px;
+  height: 100px;
+}
+
+.camaradomoindex {
+  width: 100px;
+  height: 100px;
+}
+
+.dvrindex {
+  width: 250px;
+  height: 100px;
+}
+
+.accesorioindex {
+  width: 200px;
+  height: 100px;
+}
+
+.borderindex {
+  border: 2px solid black;
+  border-radius: 30px;
+  background: white;
+  font-size: 15px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.precioindex {
+  font-size: 30px;
+  text-align: center;
+  margin: 0px;
+}
+
+.tituloh2 {
+  text-align: center;
+  color: #022E47;
+}
+
 /*Flex*/
 .flex-container {
   padding: 0px;
   margin: 0px;
   height: 120px;
-  /*Activo Flexbox*/
   display: flex;
-  /*Defino cual es mi eje principal si la fila(row) o es la columna (column)*/
   flex-direction: row;
-  /*Defino el desborde o salto de línea*/
   flex-wrap: wrap;
-  /*Alineamos los elementos en el eje principal*/
   justify-content: flex-start;
 }
 
+/*GRIDS*/
+#grid-containerindex {
+  text-align: center;
+}
+
+/*Grid areas*/
+#grilla-index {
+  display: grid;
+  grid-template-areas: "producto  producto   producto    producto";
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: 370px;
+  column-gap: 25px;
+  margin-left: 30px;
+}
+
+/*Para los productos destacados*/
+.bg-color {
+  background-color: rgb(68, 1, 68);
+}
+
+/*Diseño Responsive*/
+@media screen and (max-width: 480px) {
+  .icono-index {
+    /*padding: 0px;*/
+    margin: 0px 0px 10px 10px;
+    /*height: 60px;*/
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    justify-content: flex-start;
+  }
+  .posicion {
+    height: 25px;
+    margin: 0px 0px 10px 0px;
+  }
+  #grid-containerindex {
+    margin-top: 10px;
+  }
+  #grilla-index {
+    display: grid;
+    grid-template-areas: "producto  producto" "producto  producto";
+    grid-template-columns: repeat(2, 225px);
+    grid-template-rows: repeat(2, 230px);
+    column-gap: 25px;
+    margin-left: 0px;
+  }
+  .borderindex {
+    font-size: 9px;
+  }
+  .camarabulletindex {
+    width: 100px;
+    height: 50px;
+  }
+  .camaradomoindex {
+    width: 70px;
+    height: 70px;
+  }
+  .dvrindex {
+    width: 150px;
+    height: 50px;
+  }
+  .accesorioindex {
+    width: 100px;
+    height: 70px;
+  }
+  .precioindex {
+    font-size: 10px;
+  }
+}
+/*---------------------------------------------------------------------------------------------------------*/
 /*PAGINA PRODUCTOS Y ACCESORIOS*/
 .option {
   color: gray;
@@ -363,6 +455,68 @@ boton:active {
   grid-template-rows: 300px 300px 300px 300px 300px;
 }
 
+/*Diseño Responsive*/
+@media screen and (max-width: 480px) {
+  .select {
+    text-align: right;
+  }
+  .camarabullet {
+    width: 100px;
+    height: 50px;
+  }
+  .camaradomo {
+    width: 70px;
+    height: 70px;
+  }
+  .dvr {
+    width: 150px;
+    height: 50px;
+  }
+  .accesorio {
+    width: 200px;
+    height: 100px;
+  }
+  .dropdowns {
+    font-size: 12px;
+  }
+  boton {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .border {
+    border: 2px solid black;
+    border-radius: 30px;
+    background: white;
+    font-size: 9px;
+    margin: 10px;
+    height: 170px;
+    width: 200px;
+  }
+  .precio {
+    font-size: 10px;
+    text-align: center;
+    margin: 0px;
+  }
+  /*GRIDS*/
+  #grid-container {
+    /*Box-modeling*/
+    margin: 20px auto;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 20px;
+    text-align: center;
+    height: 600px;
+  }
+  /*Grid areas*/
+  #grilla {
+    display: grid;
+    grid-template-areas: "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto";
+    grid-template-columns: auto;
+    grid-template-rows: 200px repeat(9, 1fr);
+    margin: 20px;
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------*/
 /*PAGINA NOSOTROS*/
 .nosotros {
   margin-left: 10px;
@@ -374,6 +528,7 @@ boton:active {
   font-size: 18px;
 }
 
+/*--------------------------------------------------------------------------------------------------------------*/
 /*PAGINA CONTACTO*/
 /*BOX Modeling para la pagina Contacto*/
 .box-label {
