@@ -23,6 +23,7 @@ h1 {
   margin-left: 10px;
 }
 
+/*Defino el ancho para el despositivo movil*/
 /*-----------------------------------------------------------------*/
 /*CREACION DE BOTONES*/
 boton {
@@ -84,7 +85,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .logo-cctv {
     height: 45px;
   }
@@ -145,7 +146,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .box-mapa {
     margin: 0px;
     padding: 10px 15px 0px 10px;
@@ -347,7 +348,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .icono-index {
     /*padding: 0px;*/
     margin: 0px 0px 10px 10px;
@@ -367,13 +368,14 @@ boton:active {
   #grilla-index {
     display: grid;
     grid-template-areas: "producto  producto" "producto  producto";
-    grid-template-columns: repeat(2, 225px);
+    grid-template-columns: repeat(2, 145px);
     grid-template-rows: repeat(2, 230px);
     column-gap: 25px;
     margin-left: 0px;
   }
   .borderindex {
     font-size: 9px;
+    padding: 10px;
   }
   .camarabulletindex {
     width: 100px;
@@ -384,7 +386,7 @@ boton:active {
     height: 70px;
   }
   .dvrindex {
-    width: 150px;
+    width: 100px;
     height: 50px;
   }
   .accesorioindex {
@@ -393,6 +395,9 @@ boton:active {
   }
   .precioindex {
     font-size: 10px;
+  }
+  .altologomarca {
+    width: 150%;
   }
 }
 /*---------------------------------------------------------------------------------------------------------*/
@@ -463,7 +468,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .select {
     text-align: right;
   }
