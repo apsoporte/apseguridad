@@ -85,7 +85,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .logo-cctv {
     height: 45px;
   }
@@ -146,7 +146,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .box-mapa {
     margin: 0px;
     padding: 10px 15px 0px 10px;
@@ -348,7 +348,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .icono-index {
     /*padding: 0px;*/
     margin: 0px 0px 10px 10px;
@@ -468,7 +468,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .select {
     text-align: right;
   }
@@ -485,8 +485,8 @@ boton:active {
     height: 50px;
   }
   .accesorio {
-    width: 200px;
-    height: 100px;
+    width: 100px;
+    height: 70px;
   }
   .dropdowns {
     font-size: 12px;

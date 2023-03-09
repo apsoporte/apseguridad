@@ -24,7 +24,7 @@ h1
         margin-left: 10px;       
     }
 /*Defino el ancho para el despositivo movil*/
-$celular: 320px;
+$celular: 480px;
 /*-----------------------------------------------------------------*/
 /*CREACION DE BOTONES*/
 boton 
@@ -515,8 +515,8 @@ boton:active
         height: 50px;
       }    
       .accesorio {
-        width: 200px;
-        height: 100px;
+        width: 100px;
+        height: 70px;
       }
       .dropdowns 
         {
