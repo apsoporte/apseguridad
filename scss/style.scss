@@ -4,27 +4,22 @@
         font-family: "font-poppins" sans-serif;
         src: url("../font/Poppins-Italic.ttf");
     }
+
+    /*-------------------------------------------------------------------------------------------------------------*/
+/*CLASES PARA MENU Y LOGO PAGINAS DISEÑO*/
+@import "navbar";
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/* PIE DE PAGINA*/
+@import "footer";
+
 /*-------------------------------------------------------------------------------------------------------------*/
 /*ALTA EN GRAL*/
-body
-    {
-        background-color:beige;
-        font-size: 15px;
-        /*font-family: "font-poppins" sans-serif;*/
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-p    
-    {   
-        text-align: right;        
-        margin: 5px 15px 0px 0px;
-    }
-h1
-    {
-        font-family: cursive; 
-        margin-left: 10px;       
-    }
+@import "gral";
+
 /*Defino el ancho para el despositivo movil*/
-$celular: 480px;
+$celular: 576px;
+
 /*-----------------------------------------------------------------*/
 /*CREACION DE BOTONES*/
 boton 
@@ -55,150 +50,9 @@ boton:active
         transform: translateY(10px);
         transition: 100ms;
     }
-/*--------------------------------------------------------------------------------*/
-/*CLASES PARA MENU Y LOGO PAGINAS DISEÑO*/
-.nav-logo
-    {
-        background-color:#022E47;
-        background-image: none;        
-    }
-.menu-derecha 
-    {
-        color:#022E47;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 10px;
-        font-style: italic;                  
-        width: 20px;
-        height: 20px;               
-    }
-.logo-cctv
-    {        
-        height: 70px;     
-    }
-.logo-link
-    {
-    /*   display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;*/
 
-        text-align:right;
-        width: 20px;
-        height: 20px;      
-    } 
 
-/*Diseño Responsive*/
-@media screen and (max-width: $celular) 
-    {
-        .logo-cctv 
-            {
-              height: 45px;
-            }
-        .menu-derecha 
-            {
-                color: #022E47;
-                font-weight: 450;
-                font-size: 12px;
-                line-height: 10px;
-                font-style: italic;         
-            }
-    }
-/*----------------------------------------------------------------------*/
-/* PIE DE PAGINA*/
-/*BOX Modeling para el pie de pagina*/
-.box-mapa
-    {        
-        width: 150px;
-        height: 100px;       
-        margin: 5px;
-        padding: 5px 15px 5px 0px;
-    }
-.box-datos
-    {
-        width: 250px;
-        height: 120px;     
-        padding: 5px 10px 5px 15px;
-        font-size: 10px;
-    }
-.box-texto
-    {
-        width: 680px;
-        height: 120px;                      
-        padding: 5px 5px 5px 15px;
-        font-size: 10px;
-    }
-.box-icono
-    {        
-        width: 50px;
-        height: 100px;     
-        margin: 10px; 
-        display: flex;        
-        flex-direction: column; 
-        flex-wrap: wrap;
-        justify-content:space-evenly; 
-    }
-.box-ws
-    {        
-        width: 50px;
-        height: 100px;     
-        margin: 0px; 
 
-        display: flex;        
-        flex-direction: column; 
-        flex-wrap: wrap;
-        justify-content: center;                   
-    }
-.altofooter
-    {
-      margin-top: 0px;
-    }
-/*Diseño Responsive*/
-@media screen and (max-width: $celular) 
-    {
-        .box-mapa
-            {      
-                margin: 0px;
-                padding: 10px 15px 0px 10px;
-            }
-        .box-datos
-            {
-                width: 200px;
-                height: 50px;
-                padding: 0px 5px 0px 30px;
-                font-size: 9px;
-            }        
-        .box-texto
-            {
-                width: 450px;
-                height: 60px;
-                padding: 10px 5px 0px 10px;
-                font-size: 9px;
-            }        
-        .box-icono
-            {
-                width: 30px;
-                /*height: 50px;*/
-                margin: 10px;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-            }        
-        .box-ws
-            {
-                width: 30px;
-                /*height: 50px;*/
-                margin: 0px;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        .altofooter
-            {
-                margin-top: 450px;
-            }
-    }
 /*-----------------------------------------------------------------------------------------------------------*/
 /*PAGINA INDEX*/
 /*boton buscar*/
@@ -382,21 +236,25 @@ boton:active
           grid-template-areas:  
                 "producto  producto"
                 "producto  producto";
-          grid-template-columns: repeat(2,145px);
+          grid-template-columns: repeat(2,275px);
           grid-template-rows: repeat(2,230px);
           column-gap: 25px;
           margin-left:0px;       
         }
-  
+    /*.class-nav 
+      {
+        width: 575px;
+      }*/
     .borderindex
       {      
-        font-size: 9px;
+        font-size: 11px;
         padding: 10px;
       }
     .camarabulletindex 
       {
-        width: 100px;
-        height: 50px;
+        width: 120px;
+        height: 65px;
+        margin: 0px 0px 15px 0px;
       }
     .camaradomoindex 
       {
@@ -405,8 +263,9 @@ boton:active
       }
     .dvrindex 
       {
-        width: 100px;
-        height: 50px;
+        width: 120px;
+        height: 65px;
+        margin: 0px 0px 15px 0px;
       }
     .accesorioindex 
       {
@@ -425,49 +284,50 @@ boton:active
 
 /*---------------------------------------------------------------------------------------------------------*/
 /*PAGINA PRODUCTOS Y ACCESORIOS*/
-.option {
+.option 
+  {
     color: gray;
   }
-  
-  .select {
+  .select 
+  {
     text-align: right;
-  }
-  
-  .camarabullet {
+  }  
+  .camarabullet 
+  {
     width: 200px;
     height: 100px;
-  }
-  
-  .camaradomo {
+  }  
+  .camaradomo 
+  {
     width: 100px;
     height: 100px;
-  }
-  
-  .dvr {
+  }  
+  .dvr 
+  {
     width: 250px;
     height: 100px;
-  }
-  
-  .accesorio {
+  }  
+  .accesorio 
+  {
     width: 150px;
     height: 100px;
-  }
-  
-  .border {
+  }  
+  .border 
+  {
     border: 2px solid black;
     border-radius: 30px;
     background: white;
     font-size: 15px;
     margin: 10px;
-  }
-  
-  .precio {
+  }  
+  .precio 
+  {
     font-size: 30px;
     text-align: center;
     margin: 0px;
-  }
-  
-  .dropdowns {
+  }  
+  .dropdowns 
+  {
     margin-right: 15px;
   }
   
@@ -480,8 +340,7 @@ boton:active
     row-gap: 20px;
     text-align: center;
     height: 600px;
-  }
-  
+  }  
   /*Grid areas*/
   #grilla {
     display: grid;
@@ -504,7 +363,7 @@ boton:active
       .camarabullet
         {
           width: 100px;
-          height: 50px;
+          height: 65px;
         }    
       .camaradomo {
         width: 70px;
@@ -536,7 +395,7 @@ boton:active
         font-size: 9px;
         margin: 10px;
         height: 170px;
-        width: 200px;
+        width: 250px;
       }
       
       .precio {
@@ -645,6 +504,10 @@ boton:active
     margin: 10px;
   }
 
+ .text-login
+  {
+    text-align: left;
+  }
 /*Mejoras de BootStrap*/
 .boxlogin
   {

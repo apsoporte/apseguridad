@@ -1,0 +1,44 @@
+/*CLASES PARA MENU Y LOGO PAGINAS DISEÑO*/
+.nav-logo
+    {
+        background-color:#022E47;
+        background-image: none;        
+    }
+.menu-derecha 
+    {
+        color:#022E47;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 10px;
+        font-style: italic;                  
+        width: 20px;
+        height: 20px;               
+    }
+.logo-cctv
+    {        
+        height: 70px;     
+    }
+.logo-link
+    {    
+        text-align:right;
+        width: 20px;
+        height: 20px;      
+    } 
+
+    
+/*Diseño Responsive*/
+@media screen and (max-width:576px) 
+{
+    .logo-cctv 
+        {
+          height: 45px;
+        }
+    .menu-derecha 
+        {
+            color: #022E47;
+            font-weight: 450;
+            font-size: 12px;
+            line-height: 10px;
+            font-style: italic;         
+        }
+}

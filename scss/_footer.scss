@@ -1,0 +1,94 @@
+/*BOX Modeling para el pie de pagina*/
+.box-mapa
+    {        
+        width: 150px;
+        height: 100px;       
+        margin: 5px;
+        padding: 5px 15px 5px 0px;
+    }
+.box-datos
+    {
+        width: 250px;
+        height: 120px;     
+        padding: 5px 10px 5px 15px;
+        font-size: 10px;
+    }
+.box-texto
+    {
+        width: 680px;
+        height: 120px;                      
+        padding: 5px 5px 5px 15px;
+        font-size: 10px;
+    }
+.box-icono
+    {        
+        width: 50px;
+        height: 100px;     
+        margin: 10px; 
+        display: flex;        
+        flex-direction: column; 
+        flex-wrap: wrap;
+        justify-content:space-evenly; 
+    }
+.box-ws
+    {        
+        width: 50px;
+        height: 100px;     
+        margin: 0px; 
+
+        display: flex;        
+        flex-direction: column; 
+        flex-wrap: wrap;
+        justify-content: center;                   
+    }
+.altofooter
+    {
+      margin-top: 0px;
+    }
+/*Diseño Responsive*/
+@media screen and (max-width: 576px) 
+    {
+        .box-mapa
+            {      
+                margin: 0px;
+                padding: 10px 15px 0px 10px;
+            }
+        .box-datos
+            {
+                width: 200px;
+                height: 50px;
+                padding: 0px 5px 0px 30px;
+                font-size: 9px;
+            }        
+        .box-texto
+            {
+                width: 450px;
+                height: 60px;
+                padding: 10px 5px 0px 10px;
+                font-size: 9px;
+            }        
+        .box-icono
+            {
+                width: 30px;
+                /*height: 50px;*/
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }        
+        .box-ws
+            {
+                width: 30px;
+                /*height: 50px;*/
+                margin: 0px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        .altofooter
+            {
+                margin-top: 450px;
+            }
+    }

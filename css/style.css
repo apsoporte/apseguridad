@@ -5,56 +5,7 @@
   src: url("../font/Poppins-Italic.ttf");
 }
 /*-------------------------------------------------------------------------------------------------------------*/
-/*ALTA EN GRAL*/
-body {
-  background-color: beige;
-  font-size: 15px;
-  /*font-family: "font-poppins" sans-serif;*/
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-p {
-  text-align: right;
-  margin: 5px 15px 0px 0px;
-}
-
-h1 {
-  font-family: cursive;
-  margin-left: 10px;
-}
-
-/*Defino el ancho para el despositivo movil*/
-/*-----------------------------------------------------------------*/
-/*CREACION DE BOTONES*/
-boton {
-  padding: 10px 20px;
-  border-radius: 50px;
-  border: 0;
-  background-color: darkolivegreen;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.5s ease;
-}
-
-boton:hover {
-  letter-spacing: 3px;
-  background-color: #022E47;
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93, 24, 220) 0px 7px 29px 0px;
-}
-
-boton:active {
-  letter-spacing: 3px;
-  background-color: #022E47;
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93, 24, 220) 0px 0px 0px 0px;
-  transform: translateY(10px);
-  transition: 100ms;
-}
-
-/*--------------------------------------------------------------------------------*/
+/*CLASES PARA MENU Y LOGO PAGINAS DISEÑO*/
 /*CLASES PARA MENU Y LOGO PAGINAS DISEÑO*/
 .nav-logo {
   background-color: #022E47;
@@ -76,16 +27,13 @@ boton:active {
 }
 
 .logo-link {
-  /*   display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;*/
   text-align: right;
   width: 20px;
   height: 20px;
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .logo-cctv {
     height: 45px;
   }
@@ -97,7 +45,7 @@ boton:active {
     font-style: italic;
   }
 }
-/*----------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
 /* PIE DE PAGINA*/
 /*BOX Modeling para el pie de pagina*/
 .box-mapa {
@@ -146,7 +94,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .box-mapa {
     margin: 0px;
     padding: 10px 15px 0px 10px;
@@ -185,6 +133,56 @@ boton:active {
     margin-top: 450px;
   }
 }
+/*-------------------------------------------------------------------------------------------------------------*/
+/*ALTA EN GRAL*/
+body {
+  background-color: beige;
+  font-size: 15px;
+  font-family: "font-poppins";
+  /*font-family:Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
+p {
+  text-align: right;
+  margin: 5px 15px 0px 0px;
+}
+
+h1 {
+  font-family: cursive;
+  margin-left: 10px;
+}
+
+/*Defino el ancho para el despositivo movil*/
+/*-----------------------------------------------------------------*/
+/*CREACION DE BOTONES*/
+boton {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 0;
+  background-color: darkolivegreen;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+boton:hover {
+  letter-spacing: 3px;
+  background-color: #022E47;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 7px 29px 0px;
+}
+
+boton:active {
+  letter-spacing: 3px;
+  background-color: #022E47;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
 /*-----------------------------------------------------------------------------------------------------------*/
 /*PAGINA INDEX*/
 /*boton buscar*/
@@ -348,7 +346,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .icono-index {
     /*padding: 0px;*/
     margin: 0px 0px 10px 10px;
@@ -368,26 +366,32 @@ boton:active {
   #grilla-index {
     display: grid;
     grid-template-areas: "producto  producto" "producto  producto";
-    grid-template-columns: repeat(2, 145px);
+    grid-template-columns: repeat(2, 275px);
     grid-template-rows: repeat(2, 230px);
     column-gap: 25px;
     margin-left: 0px;
   }
+  /*.class-nav 
+    {
+      width: 575px;
+    }*/
   .borderindex {
-    font-size: 9px;
+    font-size: 11px;
     padding: 10px;
   }
   .camarabulletindex {
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 65px;
+    margin: 0px 0px 15px 0px;
   }
   .camaradomoindex {
     width: 70px;
     height: 70px;
   }
   .dvrindex {
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 65px;
+    margin: 0px 0px 15px 0px;
   }
   .accesorioindex {
     width: 100px;
@@ -468,13 +472,13 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .select {
     text-align: right;
   }
   .camarabullet {
     width: 100px;
-    height: 50px;
+    height: 65px;
   }
   .camaradomo {
     width: 70px;
@@ -502,7 +506,7 @@ boton:active {
     font-size: 9px;
     margin: 10px;
     height: 170px;
-    width: 200px;
+    width: 250px;
   }
   .precio {
     font-size: 10px;
@@ -571,7 +575,6 @@ boton:active {
   margin: 20px;
 }
 
-
 /*--------------------------------------------------------------------------------------------------------------*/
 /*PAGINA LOGIN*/
 /*BOX Modeling para la pagina Login*/
@@ -583,30 +586,31 @@ boton:active {
   justify-content: center;
 }
 
-#grilla-login 
-  {
-    display: grid;                        
-    grid-template-areas: "login   registro";
-    grid-template-columns: 50%  50%;    
-    grid-template-rows: 430px;
-    
-    margin: 10px;
-  }
+#grilla-login {
+  display: grid;
+  grid-template-areas: "login   registro";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 430px;
+  margin: 10px;
+}
+
+.text-login {
+  text-align: left;
+}
 
 /*Mejoras de BootStrap*/
-.boxlogin
-  {
-    margin-bottom: 1rem !important;
-    padding-left: 10px;
-  }
-.labellogin
-  {
-    width: 90%;    
-  }
-.botonlogin
-  {    
-    margin: 10px;
-  }
+.boxlogin {
+  margin-bottom: 1rem !important;
+  padding-left: 10px;
+}
+
+.labellogin {
+  width: 90%;
+}
+
+.botonlogin {
+  margin: 10px;
+}
 
 /*---------------------------------------------------------------------------------------------------------*/
 /*PAGINA CONTRASENA*/
@@ -618,9 +622,9 @@ boton:active {
   flex-wrap: wrap;
   justify-content: center;
 }
-.emailcontrasena
-  {
-    width: 350px;
-  }
+
+.emailcontrasena {
+  width: 350px;
+}
 
 /*# sourceMappingURL=style.css.map */
