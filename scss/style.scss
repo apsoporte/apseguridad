@@ -623,42 +623,42 @@ boton:active
   {    
     margin: 20px;
   }
-  
+
 /*--------------------------------------------------------------------------------------------------------------*/
 /*PAGINA LOGIN*/
 /*BOX Modeling para la pagina Login*/
-.box-label-login
-    {        
-        font-size: 30px;
+.box-label-login {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-        display: flex;        
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: center;;           
-    }
-.box-text-login
-    {
-        width: 400px;
-        height: 250px;     
-        margin: 0px;
-        padding: 0px 100px 0px 50px; 
+#grilla-login 
+  {
+    display: grid;                        
+    grid-template-areas: "login   registro";
+    grid-template-columns: 50%  50%;    
+    grid-template-rows: 430px;
+    
+    margin: 10px;
+  }
 
-        display: flex;        
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: start;           
-    }
-.box-text-registro
-    {
-        width: 700px;
-        height: 150px;     
-        margin: 0px; 
-
-        display: flex;        
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: start;           
-    }
+/*Mejoras de BootStrap*/
+.boxlogin
+  {
+    margin-bottom: 1rem !important;
+    padding-left: 10px;
+  }
+.labellogin
+  {
+    width: 90%;    
+  }
+.botonlogin
+  {    
+    margin: 10px;
+  }
 
 /*---------------------------------------------------------------------------------------------------------*/
 /*PAGINA CONTRASENA*/
