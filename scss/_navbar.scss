@@ -1,37 +1,54 @@
 /*CLASES PARA MENU Y LOGO PAGINAS DISEÑO*/
+
+$color: linear-gradient(to right,#022E47,#022E47,#678da3 );
+
 .nav-logo
     {
         background-color:#022E47;
-        background-image: none;        
+        background-image: $color;
     }
+
 .menu-derecha 
     {
         color:#022E47;
         font-weight: 600;
         font-size: 15px;
         line-height: 10px;
-        font-style: italic;                  
-        width: 20px;
-        height: 20px;               
+        font-style: italic; 
     }
+.menu-derecha:hover
+    {
+        font-size: 17px;
+    }
+
 .logo-cctv
     {        
-        height: 70px;     
+        height: 70px;   
+        transform: translateX(100px);
+        transition: height 2s;  
     }
+.logo-cctv:hover
+    {
+        height: 80px;
+    }
+
 .logo-link
     {    
         text-align:right;
         width: 20px;
         height: 20px;      
     } 
+.logo-link:hover 
+    {
+        height: 25px;
+    }
 
-    
 /*Diseño Responsive*/
 @media screen and (max-width:576px) 
 {
     .logo-cctv 
         {
-          height: 45px;
+            height: 45px;
         }
     .menu-derecha 
         {

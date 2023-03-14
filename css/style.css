@@ -9,7 +9,7 @@
 /*CLASES PARA MENU Y LOGO PAGINAS DISEÑO*/
 .nav-logo {
   background-color: #022E47;
-  background-image: none;
+  background-image: linear-gradient(to right, #022E47, #022E47, #678da3);
 }
 
 .menu-derecha {
@@ -18,18 +18,30 @@
   font-size: 15px;
   line-height: 10px;
   font-style: italic;
-  width: 20px;
-  height: 20px;
+}
+
+.menu-derecha:hover {
+  font-size: 17px;
 }
 
 .logo-cctv {
   height: 70px;
+  transform: translateX(100px);
+  transition: height 2s;
+}
+
+.logo-cctv:hover {
+  height: 80px;
 }
 
 .logo-link {
   text-align: right;
   width: 20px;
   height: 20px;
+}
+
+.logo-link:hover {
+  height: 25px;
 }
 
 /*Diseño Responsive*/
@@ -79,6 +91,16 @@
   justify-content: space-evenly;
 }
 
+.icono {
+  width: 25px;
+  height: 25px;
+}
+
+.icono:hover {
+  width: 35px;
+  height: 35px;
+}
+
 .box-ws {
   width: 50px;
   height: 100px;
@@ -87,6 +109,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.ws {
+  width: 50px;
+  height: 50px;
+}
+
+.ws:hover {
+  width: 60px;
+  height: 60px;
 }
 
 .altofooter {
@@ -248,8 +280,27 @@ boton:active {
 .posicion {
   vertical-align: middle;
   height: 50px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 2s;
 }
 
+@keyframes efecto {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .picture-index {
   padding: 0px;
   margin: 0px;

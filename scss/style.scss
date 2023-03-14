@@ -109,11 +109,25 @@ boton:active
   .class-nav {
     width: 350px;
   }
+
   .posicion {
     vertical-align: middle; 
     height: 50px;
-  }
   
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+  }
+  @keyframes efecto
+    {
+      0% {transform: rotate(90deg);}
+      25% {transform: rotate(180deg);}
+      50% {transform: rotate(240deg);}
+      100% {transform: rotate(360deg);}
+    }
+    
   .picture-index {
     padding: 0px;
     margin: 0px;
