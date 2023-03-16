@@ -26,7 +26,7 @@
 
 .logo-cctv {
   height: 70px;
-  transform: translateX(100px);
+  /*transform: translateX(100px);*/
   transition: height 2s;
 }
 
@@ -45,7 +45,7 @@
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 400px) {
   .logo-cctv {
     height: 45px;
   }
@@ -126,7 +126,7 @@
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 400px) {
   .box-mapa {
     margin: 0px;
     padding: 10px 15px 0px 10px;
@@ -134,7 +134,7 @@
   .box-datos {
     width: 200px;
     height: 50px;
-    padding: 0px 5px 0px 30px;
+    /*padding: 0px 5px 0px 30px;*/
     font-size: 9px;
   }
   .box-texto {
@@ -145,21 +145,25 @@
   }
   .box-icono {
     width: 30px;
-    /*height: 50px;*/
     margin: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    transform: translate(310px, -170px);
   }
   .box-ws {
     width: 30px;
-    /*height: 50px;*/
     margin: 0px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    transform: translate(305px, -135px);
+  }
+  .ws {
+    width: 35px;
+    height: 35px;
   }
   .altofooter {
     margin-top: 450px;
@@ -171,7 +175,6 @@ body {
   background-color: beige;
   font-size: 15px;
   font-family: "font-poppins";
-  /*font-family:Verdana, Geneva, Tahoma, sans-serif;*/
 }
 
 p {
@@ -325,24 +328,9 @@ boton:active {
   justify-content: stretch;
 }
 
-.camarabulletindex {
-  width: 200px;
-  height: 100px;
-}
-
-.camaradomoindex {
-  width: 100px;
-  height: 100px;
-}
-
-.dvrindex {
-  width: 250px;
-  height: 100px;
-}
-
-.accesorioindex {
-  width: 200px;
-  height: 100px;
+.pro-destacados {
+  width: 80%;
+  height: 30%;
 }
 
 .borderindex {
@@ -397,7 +385,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 400px) {
   .icono-index {
     /*padding: 0px;*/
     margin: 0px 0px 10px 10px;
@@ -417,37 +405,39 @@ boton:active {
   #grilla-index {
     display: grid;
     grid-template-areas: "producto  producto" "producto  producto";
-    grid-template-columns: repeat(2, 275px);
+    grid-template-columns: repeat(2, 186px);
     grid-template-rows: repeat(2, 230px);
     column-gap: 25px;
     margin-left: 0px;
   }
-  /*.class-nav 
-    {
-      width: 575px;
-    }*/
   .borderindex {
     font-size: 11px;
     padding: 10px;
+    width: 90%;
+    height: 90%;
   }
-  .camarabulletindex {
-    width: 120px;
-    height: 65px;
-    margin: 0px 0px 15px 0px;
-  }
-  .camaradomoindex {
-    width: 70px;
-    height: 70px;
-  }
-  .dvrindex {
-    width: 120px;
-    height: 65px;
-    margin: 0px 0px 15px 0px;
-  }
-  .accesorioindex {
-    width: 100px;
-    height: 70px;
-  }
+  /*.camarabulletindex 
+    {
+      width: 120px;
+      height: 65px;
+      margin: 0px 0px 15px 0px;
+    }
+  .camaradomoindex 
+    {
+      width: 70px;
+      height: 70px;
+    }
+  .dvrindex 
+    {
+      width: 120px;
+      height: 65px;
+      margin: 0px 0px 15px 0px;
+    }
+  .accesorioindex 
+    {
+      width: 100px;
+      height: 70px;
+    }*/
   .precioindex {
     font-size: 10px;
   }
@@ -523,7 +513,7 @@ boton:active {
 }
 
 /*Diseño Responsive*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 400px) {
   .select {
     text-align: right;
   }
@@ -666,7 +656,7 @@ boton:active {
 /*---------------------------------------------------------------------------------------------------------*/
 /*PAGINA CONTRASENA*/
 /*BOX Modeling para la pagina Contrasena*/
-*.box-correo {
+.box-correo {
   font-size: 20px;
   display: flex;
   flex-direction: row;

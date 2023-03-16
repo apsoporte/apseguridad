@@ -24,7 +24,7 @@ $color: linear-gradient(to right,#022E47,#022E47,#678da3 );
 .logo-cctv
     {        
         height: 70px;   
-        transform: translateX(100px);
+        /*transform: translateX(100px);*/
         transition: height 2s;  
     }
 .logo-cctv:hover
@@ -44,7 +44,7 @@ $color: linear-gradient(to right,#022E47,#022E47,#678da3 );
     }
 
 /*Diseño Responsive*/
-@media screen and (max-width:576px) 
+ @media screen and (max-width: 400px) 
 {
     .logo-cctv 
         {
