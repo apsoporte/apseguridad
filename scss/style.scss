@@ -54,7 +54,7 @@ boton:active
 /*-----------------------------------------------------------------------------------------------------------*/
 /*PAGINA INDEX*/
 /*boton buscar*/
-.search 
+/*.search 
   {
     width: 100%;
     position: relative;
@@ -81,6 +81,13 @@ boton:active
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
+  }*/
+.centerboton
+  {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;  
+    justify-content: center;
   }
 .wrap 
   {
@@ -161,7 +168,7 @@ boton:active
   }
 .pro-destacados
   {
-    width: 80%;
+    width: 50%;
     height: 30%;
   }  
 
@@ -213,11 +220,11 @@ boton:active
     grid-template-areas:  
           "producto  producto   producto    producto";
     grid-template-columns: repeat(4,300px);
-    grid-template-rows: 370px;
+    grid-template-rows: 300px;
     column-gap: 25px;
     margin-left: 30px;   
   }
-  /*Para los productos destacados*/
+/*Para los productos destacados*/
 .bg-color   
   {   
     background-color: rgb(68, 1, 68) ;
@@ -306,25 +313,15 @@ boton:active
   {
     text-align: right;
   }  
-.camarabullet 
+.productos
   {
-    width: 200px;
-    height: 100px;
+    width: 40%;
+    height: 30%;
   }  
-.camaradomo 
+.accesorio
   {
-    width: 100px;
-    height: 100px;
-  }  
-.dvr 
-  {
-    width: 250px;
-    height: 100px;
-  }  
-.accesorio 
-  {
-    width: 150px;
-    height: 100px;
+    width: 40%;
+    height: 30%;
   }  
 .border 
   {
@@ -365,8 +362,8 @@ boton:active
                           "producto   producto    producto    producto" 
                           "producto   producto    producto    producto" 
                           "producto   producto    producto    producto";
-    grid-template-columns: auto;
-    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
   }
   
 /*Diseño Responsive*/
@@ -376,26 +373,6 @@ boton:active
       {
         text-align: right;
       }    
-    .camarabullet
-      {
-        width: 100px;
-        height: 65px;
-      }    
-    .camaradomo 
-      {
-        width: 70px;
-        height: 70px;
-      }    
-    .dvr 
-      {
-        width: 150px;
-        height: 50px;
-      }    
-    .accesorio 
-      {
-        width: 100px;
-        height: 70px;
-      }
     .dropdowns 
       {
         font-size: 12px;
@@ -412,12 +389,13 @@ boton:active
         border: 2px solid black;
         border-radius: 30px;
         background: white;
-        font-size: 9px;
-        margin: 10px;
-        height: 170px;
-        width: 250px;
-      }
-      
+        margin: 10px;        
+        font-size: 11px;
+        padding: 10px;
+        width: 90%;
+        height: 90%;
+
+      }    
     .precio 
       {
         font-size: 10px;
@@ -451,10 +429,10 @@ boton:active
                               "producto  producto"
                               "producto  producto"
                               "producto  producto";         
-        grid-template-columns: auto;
-        grid-template-rows: 200px repeat(9,1fr);
-  
-        margin: 20px;
+        grid-template-columns: repeat(2,186px);
+        grid-template-rows: 200px repeat(9,230px);
+        column-gap: 25px;
+        margin-left:0px;           
       }
   }
 
