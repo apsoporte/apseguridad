@@ -13,20 +13,37 @@
 }
 
 .menu-derecha {
-  color: #022E47;
-  font-weight: 600;
-  font-size: 15px;
+  /*color: #022E47;*/
+  color: black;
+  /*font-weight: 600;*/
+  font-size: 18px;
   line-height: 10px;
   font-style: italic;
+  text-decoration: none;
 }
 
-.menu-derecha:hover {
-  font-size: 17px;
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu:hover {
+  font-size: 23px;
 }
 
 .logo-cctv {
   height: 70px;
-  /*transform: translateX(100px);*/
+  /*transform: translateY(12px);*/
   transition: height 2s;
 }
 
@@ -34,14 +51,15 @@
   height: 80px;
 }
 
-.logo-link {
+.logo-login, .logo-carro {
   text-align: right;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
+  justify-content: end;
 }
 
-.logo-link:hover {
-  height: 25px;
+.logo-login:hover, .logo-carro:hover {
+  height: 28px;
 }
 
 /*Diseño Responsive*/
@@ -49,12 +67,33 @@
   .logo-cctv {
     height: 45px;
   }
+  .logo-cctv:hover {
+    height: 50px;
+  }
   .menu-derecha {
     color: #022E47;
     font-weight: 450;
     font-size: 12px;
     line-height: 10px;
     font-style: italic;
+  }
+  .menu {
+    font-size: 15px;
+  }
+  .menu:hover {
+    font-size: 17px;
+  }
+  .logo-login {
+    text-align: right;
+    width: 30px;
+    height: 30px;
+    transform: translate(-65px, -150px);
+  }
+  .logo-carro {
+    text-align: right;
+    width: 30px;
+    height: 30px;
+    transform: translate(-30px, -180px);
   }
 }
 /*-------------------------------------------------------------------------------------------------------------*/
@@ -68,17 +107,17 @@
 }
 
 .box-datos {
-  width: 250px;
+  width: 380px;
   height: 120px;
   padding: 5px 10px 5px 15px;
-  font-size: 10px;
+  /*font-size: 10px;*/
 }
 
 .box-texto {
   width: 680px;
   height: 120px;
   padding: 5px 5px 5px 15px;
-  font-size: 10px;
+  /*font-size: 10px;*/
 }
 
 .box-icono {
@@ -123,6 +162,10 @@
 
 .altofooter {
   margin-top: 0px;
+}
+
+.linea {
+  margin: 0px;
 }
 
 /*Diseño Responsive*/
@@ -258,6 +301,10 @@ boton:active {
   flex-wrap: inherit;
   align-items: center;
   justify-content: center;
+}
+
+.labelbuscar {
+  width: 400px;
 }
 
 .wrap {
@@ -410,6 +457,9 @@ boton:active {
     height: 25px;
     margin: 0px 0px 10px 0px;
   }
+  .labelbuscar {
+    width: 200px;
+  }
   #grid-containerindex {
     margin-top: 10px;
   }
@@ -427,28 +477,6 @@ boton:active {
     width: 90%;
     height: 90%;
   }
-  /*.camarabulletindex 
-    {
-      width: 120px;
-      height: 65px;
-      margin: 0px 0px 15px 0px;
-    }
-  .camaradomoindex 
-    {
-      width: 70px;
-      height: 70px;
-    }
-  .dvrindex 
-    {
-      width: 120px;
-      height: 65px;
-      margin: 0px 0px 15px 0px;
-    }
-  .accesorioindex 
-    {
-      width: 100px;
-      height: 70px;
-    }*/
   .precioindex {
     font-size: 10px;
   }
@@ -466,9 +494,14 @@ boton:active {
   text-align: right;
 }
 
-.productos {
-  width: 40%;
+.productob {
+  width: 70%;
   height: 30%;
+}
+
+.productod {
+  width: 70%;
+  height: 40%;
 }
 
 .accesorio {
@@ -484,6 +517,10 @@ boton:active {
   margin: 10px;
 }
 
+.button {
+  padding: 6px 12px;
+}
+
 .precio {
   font-size: 30px;
   text-align: center;
@@ -495,22 +532,39 @@ boton:active {
 }
 
 /*GRIDS*/
-#grid-container {
+#grid-ctrproduc {
   /*Box-modeling*/
   margin: 20px auto;
   display: grid;
   column-gap: 30px;
   row-gap: 20px;
   text-align: center;
-  height: 600px;
+  height: 1250px;
+}
+
+#grid-ctracces {
+  /*Box-modeling*/
+  margin: 20px auto;
+  display: grid;
+  column-gap: 30px;
+  row-gap: 20px;
+  text-align: center;
+  height: 1250px;
 }
 
 /*Grid areas*/
-#grilla {
+#grillaproducto {
   display: grid;
-  grid-template-areas: "producto   producto    producto    producto" "producto   producto    producto    producto" "producto   producto    producto    producto" "producto   producto    producto    producto" "producto   producto    producto    producto";
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(5, 20%);
+  grid-template-areas: "producto   producto    producto    producto  producto" "producto   producto    producto    producto  producto" "producto   producto    producto    producto  producto" "producto   producto    producto    producto  producto";
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, 22%);
+}
+
+#grillaaccesorio {
+  display: grid;
+  grid-template-areas: "accesorio   accesorio    accesorio    accesorio  accesorio" "accesorio   accesorio    accesorio    accesorio  accesorio" "accesorio   accesorio    accesorio    accesorio  accesorio" "accesorio   accesorio    accesorio    accesorio  accesorio";
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, 23%);
 }
 
 /*Diseño Responsive*/
@@ -525,38 +579,59 @@ boton:active {
     padding: 5px 10px;
     font-size: 10px;
   }
+  .button {
+    padding: 0px 6px;
+  }
   .border {
     border: 2px solid black;
     border-radius: 30px;
     background: white;
-    margin: 10px;
     font-size: 11px;
-    padding: 10px;
-    width: 90%;
-    height: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px;
+    width: 95%;
+    height: 95%;
   }
   .precio {
     font-size: 10px;
     text-align: center;
     margin: 0px;
   }
+  .productob {
+    width: 50%;
+    height: 30%;
+  }
+  .productod {
+    width: 50%;
+    height: 40%;
+  }
+  .accesorio {
+    width: 50%;
+    height: 30%;
+  }
   /*GRIDS*/
-  #grid-container {
-    /*Box-modeling*/
-    margin: 20px auto;
-    display: grid;
-    column-gap: 30px;
-    row-gap: 20px;
-    text-align: center;
-    height: 600px;
+  #grid-ctrproduc {
+    height: 1450px;
+  }
+  #grid-ctracces {
+    height: 1350px;
   }
   /*Grid areas*/
-  #grilla {
+  #grillaproducto {
     display: grid;
     grid-template-areas: "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto" "producto  producto";
-    grid-template-columns: repeat(2, 186px);
-    grid-template-rows: 200px repeat(9, 230px);
-    column-gap: 25px;
+    grid-template-columns: repeat(2, 198px);
+    grid-template-rows: repeat(10, 185px);
+    /*column-gap: 25px;*/
+    margin-left: 0px;
+  }
+  #grillaaccesorio {
+    display: grid;
+    grid-template-areas: "accesorio  accesorio" "accesorio  accesorio" "accesorio  accesorio" "accesorio  accesorio" "accesorio  accesorio" "accesorio  accesorio" "accesorio  accesorio" "accesorio  accesorio" "accesorio  accesorio" "accesorio  accesorio";
+    grid-template-columns: repeat(2, 198px);
+    grid-template-rows: repeat(10, 175px);
+    /*column-gap: 25px;*/
     margin-left: 0px;
   }
 }
@@ -579,7 +654,7 @@ boton:active {
   display: grid;
   grid-template-areas: "datos  contacto";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 350px;
+  grid-template-rows: 100%;
   margin: 10px;
 }
 
@@ -603,22 +678,44 @@ boton:active {
   margin: 20px;
 }
 
+.tituloh6 {
+  text-align: center;
+  color: #022E47;
+}
+
+/*Diseño Responsive*/
+@media screen and (max-width: 400px) {
+  #grilla-contacto {
+    display: grid;
+    grid-template-areas: "datos" "contacto";
+    grid-template-columns: 98%;
+    grid-template-rows: 50% 50%;
+    margin: 0px;
+  }
+  .pag-contacto {
+    padding-left: 10px;
+    margin: 10px;
+  }
+  .boxlabel {
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------------------------------------------------------*/
 /*PAGINA LOGIN*/
 /*BOX Modeling para la pagina Login*/
-.box-label-login {
-  font-size: 30px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
+/*.box-label-login 
+  {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }*/
 #grilla-login {
   display: grid;
   grid-template-areas: "login   registro";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 430px;
+  grid-template-rows: 100%;
   margin: 10px;
 }
 
@@ -640,6 +737,16 @@ boton:active {
   margin: 10px;
 }
 
+/*Diseño Responsive*/
+@media screen and (max-width: 400px) {
+  #grilla-login {
+    display: grid;
+    grid-template-areas: "login" "registro";
+    grid-template-columns: 95%;
+    grid-template-rows: 50% 50%;
+    margin: 10px;
+  }
+}
 /*---------------------------------------------------------------------------------------------------------*/
 /*PAGINA CONTRASENA*/
 /*BOX Modeling para la pagina Contrasena*/
@@ -653,6 +760,22 @@ boton:active {
 
 .emailcontrasena {
   width: 350px;
+}
+
+.correccion {
+  height: 350px;
+}
+
+.tituloh4 {
+  text-align: center;
+  color: #022E47;
+}
+
+/*Diseño Responsive*/
+@media screen and (max-width: 400px) {
+  .emailcontrasena {
+    width: 270px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

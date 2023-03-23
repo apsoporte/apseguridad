@@ -13,28 +13,44 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="nav-logo">
-        <img class="logo-cctv" src="../Imagenes/picture/LogoCCTV-azul.png" alt="logocctv">         
-    </nav>
-    <p>   
-        <a title="Login" href="../Pages/login.html"><img class="logo-link" src="../Imagenes/icon/llave.png" alt="login"></a>  
-        <img class="logo-link" src="../Imagenes/icon/carrito-de-compras.png" alt="carrito-de-compras">
-    </p>    
-    <p>
-        <a href="../index.html" class="menu-derecha">Inicio</a>  
-        <a href="./productos.html" class="menu-derecha">Productos</a>
-        <a href="./accesorios.html" class="menu-derecha">Accesorios</a>    
-        <a href="./nosotros.html" class="menu-derecha">Nosotros</a>
-        <a href="./contacto.html" class="menu-derecha">Contacto</a>
-    </p>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg nav-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo-cctv" src="../Imagenes/picture/LogoCCTV-azul.png" alt="logocctv">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active menu" aria-current="page" href="../index.html" class="menu-derecha">Inicio</a>              
+                    <a class="nav-link menu" href="./productos.html" class="menu-derecha">Productos</a>
+                    <a class="nav-link menu" href="./accesorios.html" class="menu-derecha">Accesorios</a>
+                    <a class="nav-link menu" href="./nosotros.html" class="menu-derecha">Nosotros</a>
+                    <a class="nav-link menu" href="./contacto.html" class="menu-derecha">Contacto</a>
+                    
+                    <a title="Login" href="../Pages/login.html"> 
+                        <img class="logo-login" src="../Imagenes/icon/llave.png" alt="login">
+                    </a>
+                    <img class="logo-carro" src="../Imagenes/icon/carrito-de-compras.png" alt="carrito-de-compras">
+                </div>
+            </div>
+        </div>
+    </nav>    
     <br>
     <br>
     <br> 
+    <h2 class="tituloh2">Olvido su contraseña?</h2>            
+    <br>
+    <br>
+    <br>
     <form action="" method="post">
-        <section>       
-            <div class="box-correo">            
-                <label >Ingrese su correo electronico</label>            
+        <section class="correccion">       
+            <div class="box-correo">       
+                <h4 class="tituloh4">Ingrese su correo electronico</h4>            
             </div>
+            <br>
             <br>
             <br>        
             <div class="box-correo">            
@@ -43,6 +59,7 @@
                     <input type="email" class="form-control" id="inputPassword2" placeholder="hola@servidor.com">
                 </div>
             </div>            
+            <br>
             <br>
             <br>
             <div class="box-correo">            
@@ -56,9 +73,10 @@
     <br>
     <br>
     <br>
+    <br>
     <br>    
-    <footer>
-        <hr/>
+    <footer>        
+        <hr class="linea"/>
         <section class="flex-container" >
             <!--Para incluir la linea horizontal en el Footer, sin tener q usar el p-->               
             <div class="box-mapa">
@@ -70,11 +88,11 @@
             
             <div class="box-datos">
                 <br>
-                Dirección:<br>
+                Dirección:
                 Mujica Lainez 3537 - B° Poeta Lugones <br>
-                Telefono:<br>
+                Telefono:
                 54 351 6336150<br>
-                Email:<br>
+                Email:
                 info@apseguridad.com.ar
             </div>
             

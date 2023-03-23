@@ -18,20 +18,33 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="nav-logo">
-        <img class="logo-cctv" src="./Imagenes/picture/LogoCCTV-azul.png" alt="logocctv">         
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg nav-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo-cctv" src="./Imagenes/picture/LogoCCTV-azul.png" alt="logocctv">                
+            </a>          
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>            
+            
+            <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active menu" aria-current="page" href="#" class="menu-derecha">Inicio</a>              
+                    <a class="nav-link menu" href="./Pages/productos.html" class="menu-derecha">Productos</a>
+                    <a class="nav-link menu" href="./Pages/accesorios.html" class="menu-derecha">Accesorios</a>
+                    <a class="nav-link menu" href="./Pages/nosotros.html" class="menu-derecha">Nosotros</a>
+                    <a class="nav-link menu" href="./Pages/contacto.html" class="menu-derecha">Contacto</a>
+                    
+                    <a title="Login" href="./Pages/login.html"> 
+                        <img class="logo-login" src="./Imagenes/icon/llave.png" alt="login">
+                    </a>
+                    <img class="logo-carro" src="./Imagenes/icon/carrito-de-compras.png" alt="carrito-de-compras">
+                </div>
+            </div>
+        </div>
     </nav>
-    <p>   
-        <a title="Login" href="./Pages/login.html"><img class="logo-link" src="./Imagenes/icon/llave.png" alt="login"></a>  
-        <img class="logo-link" src="./Imagenes/icon/carrito-de-compras.png" alt="carrito-de-compras">
-    </p>    
-    <p>  
-        <a href="#" class="menu-derecha">Inicio</a>  
-        <a href="./Pages/productos.html" class="menu-derecha">Productos</a>
-        <a href="./Pages/accesorios.html" class="menu-derecha">Accesorios</a>    
-        <a href="./Pages/nosotros.html" class="menu-derecha">Nosotros</a>
-        <a href="./Pages/contacto.html" class="menu-derecha">Contacto</a>
-    </p>
     <br>
     <br>
     <br>
@@ -40,7 +53,7 @@
     <nav class="navbar center">
         <div class="centerboton">
             <form class="d-flex " role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar...." aria-label="Buscar">
+                <input class="form-control me-2 labelbuscar" type="search" placeholder="Buscar...." aria-label="Buscar">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>                
             </form>
         </div>
@@ -77,9 +90,9 @@
         </button>
     </div>
     <br>
-
-     <!--Imagenes Logotipos-->
-     <section  class="icono-index">
+    <br>
+    <!--Imagenes Logotipos-->         
+    <section  class="icono-index">
         <nav class="class-nav" >
             <img class="posicion" src="./Imagenes/icon/efectivo.png" alt="efectivo">            
             <label for="efectivo">Efectivo</label>
@@ -95,7 +108,9 @@
     </section>
     <br>
     <br>
-    <!--Productos destacados-->    
+    <!--Productos destacados-->   
+    <h2 class="tituloh2">Productos Destacados</h2> 
+    <br>
     <section class=" bg-color"> 
         <div id="grid-containerindex">
             <div id="grilla-index" >
@@ -166,13 +181,12 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>    
-    <br>    
+    
     <br>
     <br>
     <br>
-    <br>
-    <footer class="piepagina">
-        
+    <hr class="linea"/>
+    <footer class="piepagina">      
         <section class="flex-container" >
             <!--Para incluir la linea horizontal en el Footer, sin tener q usar el p-->               
             <div class="box-mapa">
@@ -181,14 +195,14 @@
                         width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">            
                 </iframe>
             </div>
-            
+                        
             <div class="box-datos">
                 <br>
-                Dirección:<br>
+                Dirección:
                 Mujica Lainez 3537 - B° Poeta Lugones <br>
-                Telefono:<br>
+                Telefono:
                 54 351 6336150<br>
-                Email:<br>
+                Email:
                 info@apseguridad.com.ar
             </div>
             

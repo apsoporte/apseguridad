@@ -10,21 +10,38 @@ $color: linear-gradient(to right,#022E47,#022E47,#678da3 );
 
 .menu-derecha 
     {
-        color:#022E47;
-        font-weight: 600;
-        font-size: 15px;
+        /*color: #022E47;*/
+        color: black;
+        /*font-weight: 600;*/
+        font-size: 18px;
         line-height: 10px;
         font-style: italic; 
+        text-decoration: none;  
     }
-.menu-derecha:hover
+.menu {    
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content:flex-end;
+
+        font-size: 20px;
+    }
+.menu > li 
     {
-        font-size: 17px;
+        margin: 0 1rem;
+        overflow: hidden;
+    }
+.menu:hover
+    {
+        font-size: 23px;
     }
 
 .logo-cctv
     {        
         height: 70px;   
-        /*transform: translateX(100px);*/
+        /*transform: translateY(12px);*/
         transition: height 2s;  
     }
 .logo-cctv:hover
@@ -32,30 +49,61 @@ $color: linear-gradient(to right,#022E47,#022E47,#678da3 );
         height: 80px;
     }
 
-.logo-link
+.logo-login, .logo-carro
     {    
         text-align:right;
-        width: 20px;
-        height: 20px;      
+        width: 25px;
+        height: 25px; 
+        justify-content: end;     
     } 
-.logo-link:hover 
+    
+.logo-login:hover, .logo-carro:hover 
     {
-        height: 25px;
+        height: 28px;
     }
 
 /*Diseño Responsive*/
  @media screen and (max-width: 400px) 
-{
-    .logo-cctv 
-        {
-            height: 45px;
-        }
-    .menu-derecha 
-        {
-            color: #022E47;
-            font-weight: 450;
-            font-size: 12px;
-            line-height: 10px;
-            font-style: italic;         
-        }
-}
+    {
+        .logo-cctv 
+            {
+                height: 45px;
+            }
+        .logo-cctv:hover
+            {
+                height: 50px;
+            }
+
+        .menu-derecha 
+            {
+                color: #022E47;
+                font-weight: 450;
+                font-size: 12px;
+                line-height: 10px;
+                font-style: italic;
+            }
+        .menu
+            {
+                font-size: 15px;               
+            }
+        .menu:hover 
+            {
+                font-size: 17px;
+            } 
+        .logo-login
+            {    
+                text-align:right;
+                width: 30px;
+                height: 30px;                 
+                transform: translate(-65px, -150px);  
+            }  
+        .logo-carro
+            {    
+                text-align:right;
+                width: 30px;
+                height: 30px;                 
+                transform: translate(-30px, -180px);  
+            } 
+         
+           
+    }

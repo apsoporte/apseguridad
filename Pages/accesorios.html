@@ -12,26 +12,37 @@
     <!--Link estilo-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <nav class="nav-logo">
-        <img class="logo-cctv" src="../Imagenes/picture/LogoCCTV-azul.png" alt="logocctv">         
+<body>    
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg nav-logo">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo-cctv" src="../Imagenes/picture/LogoCCTV-azul.png" alt="logocctv">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active menu" aria-current="page" href="../index.html" class="menu-derecha">Inicio</a>              
+                    <a class="nav-link menu" href="./productos.html" class="menu-derecha">Productos</a>
+                    <a class="nav-link menu" href="./accesorios.html" class="menu-derecha">Accesorios</a>
+                    <a class="nav-link menu" href="./nosotros.html" class="menu-derecha">Nosotros</a>
+                    <a class="nav-link menu" href="./contacto.html" class="menu-derecha">Contacto</a>
+                    
+                    <a title="Login" href="../Pages/login.html"> 
+                        <img class="logo-login" src="../Imagenes/icon/llave.png" alt="login">
+                    </a>
+                    <img class="logo-carro" src="../Imagenes/icon/carrito-de-compras.png" alt="carrito-de-compras">
+                </div>
+            </div>
+        </div>
     </nav>
-    <p>   
-        <a title="Login" href="../Pages/login.html"><img class="logo-link" src="../Imagenes/icon/llave.png" alt="login"></a>  
-        <img class="logo-link" src="../Imagenes/icon/carrito-de-compras.png" alt="carrito-de-compras">
-    </p>    
-    <p>  
-        <a href="../index.html" class="menu-derecha">Inicio</a>  
-        <a href="./productos.html" class="menu-derecha">Productos</a>
-        <a href="#" class="menu-derecha">Accesorios</a>    
-        <a href="./nosotros.html" class="menu-derecha">Nosotros</a>
-        <a href="./contacto.html" class="menu-derecha">Contacto</a>
-    </p>
     <br>
     <br>
     <div class="dropdown select dropdowns" >
         Ordenar por:
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" margin="15px">
+        <button class="btn btn-secondary dropdown-toggle button" type="button" data-bs-toggle="dropdown" aria-expanded="false" margin="15px">
         Opcion
         </button>
         <ul class="dropdown-menu">
@@ -42,14 +53,13 @@
     </div>
 
     <!--Grids Accesorios-->
-    <div id="grid-container">        
-        <div id="grilla" >
+    <div id="grid-ctracces">        
+        <div id="grillaaccesorio" >
             <!--Primera Fila-->
             <div class="border">
-                <img class="accesorio" src="../Imagenes/picture/accesorios/conectorh.png" alt="conectorh">
-                <br>                
-                <br>Ficha plug HEMBRA conector para alimentar cámara cctv</br>   
+                <img class="accesorio" src="../Imagenes/picture/accesorios/conectorh.png" alt="conectorh">                
                 <br>
+                <br>Ficha plug HEMBRA conector para alimentar cámara cctv</br>                   
                 <p class="precio">$133,29</p>             
                 <br>               
                 <boton>Comprar</boton>
@@ -58,7 +68,7 @@
                 <img class="accesorio" src="../Imagenes/picture/accesorios/conectorm.png" alt="conectorm">    
                 <br>                            
                 <br>Ficha plug MACHO conector para alimentar cámara cctv</br>                             
-                <br>
+                
                 <p class="precio">$111,07</p>
                 <br>
                 <boton>Comprar</boton>
@@ -67,7 +77,7 @@
                 <img class="accesorio" src="../Imagenes/picture/accesorios/parbalum.png" alt="parbalum"> 
                 <br>               
                 <br>Pack Balun conector + Plug Dc Macho Hembra cctv cámara DVR utp 400m</br>   
-                <br>                             
+                
                 <p class="precio">$723,46</p>
                 <br>
                 <boton>Comprar</boton>
@@ -76,28 +86,26 @@
                 <img class="accesorio" src="../Imagenes/picture/accesorios/balumrj45.png" alt="balumrj45">  
                 <br>              
                 <br>Par Balun video + alimentacion cctv Rj45 Dahua Hd</br>                                
-                <br>
+                
                 <p class="precio">$2.687,79</p>
                 <br>                
                 <boton>Comprar</boton>
-            </div>
-            <!--Segunda Fila-->
+            </div>            
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/fuente1a.png" alt="fuente1a">
                 <br>
-                <br>Fuente de alimentacion 12vdc-1A</br>   
-                <br>
+                <br>Fuente de alimentacion 12vdc-1A</br>                   
                 <br>
                 <p class="precio">$1.825,47</p>             
                 <br>               
                 <boton>Comprar</boton>
             </div>
+            <!--Segunda Fila-->
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/fuente5a.png" alt="fuente5a">    
                 <br>                            
                 <br>Fuente de alimentacion 12vdc-5A</br>                             
-                <br>
-                <br>
+                <br>                
                 <p class="precio">$3.922,68</p>
                 <br>
                 <boton>Comprar</boton>
@@ -105,9 +113,7 @@
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/fuente10a.png" alt="fuente10a"> 
                 <br>               
-                <br>Fuente de alimentación 12V-10A - GAB MET</br>                                
-                <br>
-                <br>
+                <br>Fuente de alimentación 12V-10A - GAB MET</br>                                                
                 <p class="precio">$5.577,62</p>
                 <br>
                 <boton>Comprar</boton>
@@ -115,19 +121,15 @@
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/fuente12a.png" alt="fuente12a">  
                 <br>              
-                <br>Fuente de alimentación 6-12-24VDC 5A c/ cargador de bateria</br>                
-                <br>
+                <br>Fuente de alimentación 6-12-24VDC 5A c/ cargador de bateria</br>                                
                 <p class="precio">$9.779,23</p>
                 <br>                
                 <boton>Comprar</boton>
-            </div>
-            <!--Tercera Fila-->
+            </div>            
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/cajamontaje.png" alt="cajamontaje">
                 <br>
-                <br>Caja de montaje plastica pared p/cámaras dahua</br>   
-                <br>
-                <br>
+                <br>Caja de montaje plastica pared p/cámaras dahua</br>                   
                 <p class="precio">$1.270,73</p>             
                 <br>               
                 <boton>Comprar</boton>
@@ -135,19 +137,18 @@
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/microfono.png" alt="microfono">    
                 <br>                           
-                <br>Micrófono cable, RCA, 12V</br>                             
-                <br>
+                <br>Micrófono cable, RCA, 12V</br>                                             
                 <br>
                 <p class="precio">$847,17</p>
                 <br>
                 <boton>Comprar</boton>
             </div>
+            <!--Tercera Fila-->
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/sd32gb.png" alt="sd32gb"> 
                 <br>               
                 <br>Micro SD WD Purple QD101 32Gb</br>  
-                <br>
-                <br>              
+                <br>                
                 <p class="precio">$2.703,46</p>
                 <br>
                 <boton>Comprar</boton>
@@ -155,19 +156,16 @@
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/sd64gb.png" alt="sd64gb">  
                 <br>              
-                <br>Micro SD WD Purple QD101 64Gb</br> 
-                <br>
+                <br>Micro SD WD Purple QD101 64Gb</br>                 
                 <br>               
                 <p class="precio">$4.787,71</p>
                 <br>                
                 <boton>Comprar</boton>
-            </div>
-            <!--Cuarta Fila-->
+            </div>            
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/disco1tb.png" alt="disco1tb">
                 <br>
-                <br>Disco Rígido S-ATA 1TB WD Purplea</br>   
-                <br>
+                <br>Disco Rígido S-ATA 1TB WD Purplea</br>                   
                 <br>
                 <p class="precio">$21.423,91</p>             
                 <br>               
@@ -176,8 +174,7 @@
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/disco2tb.png" alt="disco2tb">    
                 <br>                            
-                <br>Disco Rígido S-ATA 2TB WD Purplea</br>                             
-                <br>
+                <br>Disco Rígido S-ATA 2TB WD Purplea</br>                                             
                 <br>
                 <p class="precio">$27.656,32</p>
                 <br>
@@ -186,29 +183,26 @@
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/disco3tb.png" alt="disco3tb"> 
                 <br>               
-                <br>Disco Rígido S-ATA 3TB WD Purplea</br>  
-                <br>
+                <br>Disco Rígido S-ATA 3TB WD Purplea</br>                  
                 <br>              
                 <p class="precio">$35.706,52</p>
                 <br>
                 <boton>Comprar</boton>
             </div>
+            <!--Cuarta Fila-->
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/disco4tb.png" alt="disco4tb">  
                 <br>              
-                <br>Disco Rígido S-ATA 4TB WD Purplea</br>                
-                <br>
+                <br>Disco Rígido S-ATA 4TB WD Purplea</br>                                
                 <br>
                 <p class="precio">$43,464.58</p>
                 <br>                
                 <boton>Comprar</boton>
-            </div>
-            <!--Quinta Fila-->
+            </div>            
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/kingtom32gb.png" alt="kingtom32gb">
                 <br>
-                <br>MEMORIA MICROSD 32GB KINGSTON CLASE 10</br>   
-                <br>
+                <br>MEMORIA MICROSD 32GB KINGSTON CLASE 10</br>                   
                 <p class="precio">$2.753,25</p>             
                 <br>               
                 <boton>Comprar</boton>
@@ -216,8 +210,7 @@
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/sddahua64gb.png" alt="sddahua64gb">    
                 <br>                        
-                <br>MICRO SD TF-C100 DAHUA 64Gb C10 / U3 / V30</br>                             
-                <br>
+                <br>MICRO SD TF-C100 DAHUA 64Gb C10 / U3 / V30</br>                                             
                 <p class="precio">$9.636,28</p>
                 <br>
                 <boton>Comprar</boton>
@@ -225,8 +218,7 @@
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/sddahua128gb.png" alt="sddahua128gb"> 
                 <br>               
-                <br>MICRO SD TF-C100 DAHUA 128Gb C10 / U3 / V30</br>                        
-                <br>
+                <br>MICRO SD TF-C100 DAHUA 128Gb C10 / U3 / V30</br>                                        
                 <p class="precio">$16.189,57</p>
                 <br>
                 <boton>Comprar</boton>
@@ -234,62 +226,16 @@
             <div class="border">
                 <img class="accesorio" src="../Imagenes/picture/accesorios/sddahua256gb.png" alt="sddahua256gb">  
                 <br>              
-                <br>MICRO SD TF-C100 DAHUA 256Gb C10 / U3 / V30</br>                
-                <br>
+                <br>MICRO SD TF-C100 DAHUA 256Gb C10 / U3 / V30</br>                                
                 <p class="precio">$30.065,49</p>
                 <br>                
                 <boton>Comprar</boton>
             </div>            
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer class="altofooter">
-        <hr/>
+
+    <footer class="altofooter">    
+        <hr class="linea"/>    
         <section class="flex-container" >
             <!--Para incluir la linea horizontal en el Footer, sin tener q usar el p-->               
             <div class="box-mapa">
@@ -301,11 +247,11 @@
 
             <div class="box-datos">
                 <br>
-                Dirección:<br>
+                Dirección:
                 Mujica Lainez 3537 - B° Poeta Lugones <br>
-                Telefono:<br>
+                Telefono:
                 54 351 6336150<br>
-                Email:<br>
+                Email:
                 info@apseguridad.com.ar
             </div>
 
@@ -332,6 +278,7 @@
             </div>            
         </section>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
