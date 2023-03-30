@@ -10,15 +10,13 @@
     {
         width: 380px;
         height: 120px;     
-        padding: 5px 10px 5px 15px;
-        /*font-size: 10px;*/
+        padding: 5px 10px 5px 15px;        
     }
 .box-texto
     {
         width: 680px;
         height: 120px;                      
-        padding: 5px 5px 5px 15px;
-        /*font-size: 10px;*/
+        padding: 5px 5px 5px 15px;        
     }
 .box-icono
     {        
@@ -78,20 +76,21 @@
         .box-mapa
             {      
                 margin: 0px;
-                padding: 10px 15px 0px 10px;
+                padding: 10px 0px 0px 10px;
+                width: 130px;
             }
         .box-datos
             {
-                width: 200px;
+                width: 180px;
                 height: 50px;
-                /*padding: 0px 5px 0px 30px;*/
+                padding: 10px 5px 0px 5px;
                 font-size: 9px;
             }        
         .box-texto
             {
                 width: 450px;
                 height: 60px;
-                padding: 10px 5px 0px 10px;
+                padding: 0px 5px 0px 10px;
                 font-size: 9px;
             }        
         .box-icono
@@ -102,7 +101,7 @@
                 flex-direction: column;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-                transform: translate(310px, -170px);
+                transform: translate(300px, -170px);
             }        
         .box-ws
             {
@@ -112,7 +111,7 @@
                 flex-direction: column;
                 flex-wrap: wrap;
                 justify-content: center;
-                transform: translate(305px, -135px);
+                transform: translate(300px, -132px);
             }
         .ws
             {
